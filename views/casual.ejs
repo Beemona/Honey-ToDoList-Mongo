@@ -1,0 +1,30 @@
+<%- include("partials/header-casual.ejs") %>
+
+
+
+<section class="fullForm">
+
+    <form action="/casual" method="POST" class="formStyle">
+        <input type="text" name="todoTask" placeholder="Enter Task" class="form">
+        
+    </form> 
+
+ 
+
+    
+   <% data.forEach(element => { %>
+
+    <div class="taskSubmitted">
+      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" value="asd" >
+      <label for="asd">
+        <%= element.todoTask %>
+      </label>
+      
+     
+      </div>
+  
+    <% }) %>
+ 
+</section>
+
+  <%- include("partials/footer.ejs") %>
